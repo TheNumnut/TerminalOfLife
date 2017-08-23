@@ -10,22 +10,43 @@
         var input = document.getElementById('enter').value
         if (input == "/bootup") {
           
-          setTimeout(function(){document.getElementById('output').innerHTML = "TOL Booting Up.";}, 1000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "TOL BOOTING UP.";}, 1000);
           
-          setTimeout(function(){document.getElementById('output').innerHTML = "TOL Booting Up..";}, 2000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "TOL BOOTING UP..";}, 2000);
 
-          setTimeout(function(){document.getElementById('output').innerHTML = "TOL Booting Up...";}, 3000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "TOL BOOTING UP...";}, 3000);
           
           setTimeout(function(){alert("BEEP BEEP BEEP!!!");}, 4000);
 
-          setTimeout(function(){document.getElementById('output').innerHTML = "TOL Powered";}, 4000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "TOL POWERED";}, 4000);
           
-          //Add error here and give hint for next command
+          setTimeout(function(){document.getElementById('output').innerHTML = "ERROR DETECTED...TRACING...";}, 5000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "CORRUPTION DETECTED In \"TOL/history.txt\"...";}, 6000);
           
           document.getElementById('enter').value = ""; //RESET input
         }
-        
-
+        if (input=="/open TOL/history.txt") {
+          setTimeout(function(){document.getElementById('output').innerHTML = "ATTEMPTING TO OPEN FILE...";}, 1000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "WARNING: CORRUPTION HAZARD";}, 3000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "OPENING ANYWAY...";}, 4000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "ACTIVATING ONE-WAY-WALL DEFENCE SYSTEM.";}, 5000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "ACTIVATING ONE-WAY-WALL DEFENCE SYSTEM..";}, 6000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "ACTIVATING ONE-WAY-WALL DEFENCE SYSTEM...";}, 7000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "SCANNING CONTENTS...";}, 9000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "RELAYING CONTENTS...";}, 11000);
+          
+          setTimeout(function(){document.getElementById('output').innerHTML = "Help  pleAse heLp   us if   you  Can  we  have found   out it  was aired   this is  all just   a mess  now people   are  trying to   fix it  By hacKing   the creators  lIke your   owN code  turninG on  you";}, 14000);
+          
+          setTimeout(function(){alert("ONE-WAY-WALL HOLDING... FIREWALL FAILING... LOGISTICS FAILING... COMMMMMMMMMMUNICATIONS FAILINGGGGG... OOnnnnE-Way-wAlL FFffFaAaaIiiILlllLIinNngGG...");}, 15000);
+          
+          
+          
       },3000);
       
     </script>
@@ -34,7 +55,6 @@
     <textarea rows=1 id="enter"></textarea><br>
     
     <div id="output"></div><br><hr><br>
-    <p>YOU SUDDENLY WAKE UP, OR MAYBE YOU WERE ALREADY AWAKE. YOU REMEMBER... CODING? COMPUTERS? AND PANIC. LOTS OF PANIC. IT IS AS IF THE WHOLE WORLD WAS FREAKED OUT BY SOMETHING. YOU THINK... YOU REMEMBER... THE HUMAN RACE FINALLY FOUND OUT...</p>
-    <br><b><i>THEY WERE NEVER REAL</i><b><br>
+    
   </body>
 </html>
