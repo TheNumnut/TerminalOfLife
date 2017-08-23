@@ -1,8 +1,22 @@
 <html>
   <head>
     <title>TOL</title>
+    <script>
+      setInterval(function() {
+        var input = document.getElementById('enter').innerHTML
+        if (input == "/bootup") {
+          alert("TOL Booting Up...");
+          alert("TOL Powered Up");
+        }
+        
+        
+      },3000);
+      
+    </script>
   </head>
   <body>
+    <textarea rows=1 id="enter"></textarea><br>
     
+    <div id="output"><\div>
   </body>
 </html>
