@@ -2,11 +2,19 @@
   <head>
     <title>TOL</title>
     <script>
+      function n() {}
       setInterval(function() {
         var input = document.getElementById('enter').innerHTML
         if (input == "/bootup") {
-          alert("TOL Booting Up...");
-          alert("TOL Powered Up");
+          document.getElementById('output').innerHTML = "TOL Booting Up.";
+          setTimeout(n(), 1000);
+          document.getElementById('output').innerHTML = "TOL Booting Up..";
+          setTimeout(n(), 1000);
+          document.getElementById('output').innerHTML = "TOL Booting Up...";
+          setTimeout(n(), 1000);
+          alert("BEEP BEEP BEEP!!!");
+          document.getElementById('output').innerHTML = "TOL Powered";
+          
         }
         
         
