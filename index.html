@@ -1,11 +1,14 @@
 <html>
   <head>
     <title>TOL</title>
-    Version 0.0.2
+    Version 0.0.0.3
     <br>
     
     <script>
-      function n() {}
+      function n() {
+        null
+      }
+     
       setInterval(function() {
         var input = document.getElementById('enter').value
         if (input == "/bootup") {
@@ -16,8 +19,7 @@
           document.getElementById('output').value = "TOL Booting Up...";
           setTimeout(n(), 1000);
           alert("BEEP BEEP BEEP!!!");
-          document.getElementById('output').value = "TOL Powered";
-          
+          document.getElementById('output').value = "TOL Powered";   
         }
         
         document.getElementById('enter').value = ""; //RESET input
