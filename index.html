@@ -8,6 +8,7 @@
     <script>
       var hint = 0;
       setInterval(function() {
+        document.getElementById('hint').innerHTML = hint.toString();
         var input = document.getElementById('enter').value
         if (input == "/bootup") {
           
@@ -57,7 +58,7 @@
         if (hint == 11) {
           hint = hint-1
         }
-        document.getElementById('hint').innerHTML = hint.toString();
+        
       }, 60000);
       
     </script>
