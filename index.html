@@ -3,12 +3,12 @@
     <title>TOL</title>
     Version 0.2.1
     <br>
-    Hints: <div id="hint"></div>
+    <div id="hint">Hints: </div>
     
     <script>
       var hint = 0;
       setInterval(function() {
-        document.getElementById('hint').innerHTML = hint.toString();
+        document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
         var input = document.getElementById('enter').value
         if (input == "/bootup") {
           
