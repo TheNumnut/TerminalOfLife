@@ -4,7 +4,22 @@
     Version 0.2.1
     <br>
     <div id="hint">Hints: </div>
-    
+    <style>
+      #hint {
+        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+        animation: mymove 5s infinite;
+      }
+
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes mymove {
+        50% {text-shadow: 10px 15px 20px black;}
+      }
+
+  
+      @keyframes mymove {
+        50% {text-shadow: 10px 15px 20px black;}
+      }
+    </style>
     <script>
       var hint = 0;
       setInterval(function() {
@@ -63,12 +78,12 @@
       
     </script>
   </head>
-  <body>
+  <body style="background-color:maroon;">
     <textarea rows=1 id="enter"></textarea><br>
     
     <div id="output"></div><br><hr><br>
-    <p>
-      <strong>1/1/2056</strong>
+    <p style="font-family: ;">
+      <strong>1/1/2056</strong><br>
       Dear Diary, <br>I think the world is ending. I really should have told her how I really felt about her while I could.
       Now she is probably dead. Legit, everyone is killing each other and trying to get out of <em>layers</em>. I could be
       in a layer and I do not even know about it. But I really do not care, in my perspective I think we might as well
