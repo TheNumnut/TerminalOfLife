@@ -3,9 +3,10 @@
     <title>TOL</title>
     Version 0.2.1
     <br>
+    Hints: <div id="hint"></div>
     
     <script>
-     
+      var hint = 0;
       setInterval(function() {
         var input = document.getElementById('enter').value
         if (input == "/bootup") {
@@ -50,6 +51,14 @@
           
           
       },3000);
+      
+      setInterval(function() {
+        hint = hint + 1
+        if (hint == 11) {
+          hint = hint-1
+        }
+        document.getElementById('hint').innerHTML = hint.toString();
+      }, 60000);
       
     </script>
   </head>
