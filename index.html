@@ -1,9 +1,10 @@
 <html>
-  <head>
+  <head style="background-color:green;">
     <title>TOL</title>
     <div id="version">Version 0.4.2.5</div>
     <br>
-    <div id="hint">Hints: 0</div>
+    <div id="hint">Hints: 0</div><br>
+    <button onclick="usehint()">Use Hint</button><br>
     <style>
       #version {
         -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
@@ -22,13 +23,8 @@
     </style>
     <script>
       var hint = 0;
-      function hide(name) {
-        document.getElementById(name).style.color = "powderblue";
-      }
-      function show(name) {
-        document.getElementById(name).style.color = "black";
-      }
       
+        
       setInterval(function() {
         document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
         var input = document.getElementById('enter').value
@@ -50,7 +46,7 @@
           
           document.getElementById('enter').value = ""; //RESET input
           
-          show("diary1");
+          
           
           
         }
@@ -75,7 +71,7 @@
           document.getElementById('enter').value = ""; //RESET input
           
           
-          show("diary2");
+          
           
           
         }
@@ -123,8 +119,4 @@
       </p>
     </div>
   </body>
-  <script>
-    hide("diary1");
-    hide("diary2");
-  </script>
 </html>
