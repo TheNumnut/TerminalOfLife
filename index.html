@@ -1,9 +1,9 @@
 <html>
   <head>
     <title>TOL</title>
-    <div id="version">Version 0.4.1</div>
+    <div id="version">Version 0.4.2</div>
     <br>
-    <div id="hint">Hints: </div>
+    <div id="hint">Hints: 0</div>
     <style>
       #version {
         -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
@@ -12,18 +12,17 @@
 
       /* Chrome, Safari, Opera */
       @-webkit-keyframes mymove {
-        50% {text-shadow: 10px 15px 20px yellow;}
+        50% {text-shadow: 10px 15px 20px white;}
       }
 
   
       @keyframes mymove {
-        50% {text-shadow: 10px 15px 20px red;}
+        50% {text-shadow: 10px 15px 20px black;}
       }
     </style>
     <script>
       var hint = 0;
-      hide('diary1');
-      hide('diary2');
+      
       
       function hide(div) {
         var x = document.getElementById(div);
@@ -33,6 +32,8 @@
         var x = document.getElementById(div);
         x.style.display = 'none';
       }
+      hide('diary1');
+      hide('diary2');
       
       setInterval(function() {
         document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
