@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>TOL</title>
-    <div id="version">Version 0.4.2</div>
+    <div id="version">Version 0.4.2.1</div>
     <br>
     <div id="hint">Hints: 0</div>
     <style>
@@ -32,8 +32,7 @@
         var x = document.getElementById(divs);
         x.style.display = 'none';
       }
-      hide('diary1');
-      hide('diary2');
+      
       
       setInterval(function() {
         document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
@@ -124,6 +123,9 @@
         self-conscious but not self-understanding string of code or even person somehow, finds me and decides to open me up.
       </p>
     </div>
-    
+    <script>
+      hide('diary1');
+      hide('diary2');
+    </script>
   </body>
 </html>
