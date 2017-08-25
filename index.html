@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>TOL</title>
-    <div id="version">Version 0.4.2.2</div>
+    <div id="version">Version 0.4.2.3</div>
     <br>
     <div id="hint">Hints: 0</div>
     <style>
@@ -22,8 +22,12 @@
     </style>
     <script>
       var hint = 0;
-      document.getElementById('diary1').style.color = "powderblue";
-      document.getElementById('diary2').style.color = "powderblue";
+      function hide(name) {
+        document.getElementById('name').style.color = "powderblue";
+      }
+      function show(name) {
+        document.getElementById('name').style.color = "black";
+      }
       
       setInterval(function() {
         document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
@@ -46,7 +50,7 @@
           
           document.getElementById('enter').value = ""; //RESET input
           
-          document.getElementById('diary1').style.color = "black";
+          show("diary1");
           
           
         }
@@ -70,7 +74,8 @@
           setTimeout(function(){alert("ONE-WAY-WALL HOLDING... FIREWALL FAILING... LOGISTICS FAILING... COMMMMMMMMMMUNICATIONS FAILINGGGGG... OOnnnnE-Way-wAlL FFffFaAaaIiiILlllLIinNngGG...");}, 15000);
           document.getElementById('enter').value = ""; //RESET input
           
-          document.getElementById('diary2').style.color = "black";
+          
+          show("diary2");
           
           
         }
@@ -118,4 +123,8 @@
       </p>
     </div>
   </body>
+  <script>
+    hide("diary1");
+    hide("diary2");
+  </script>
 </html>
