@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>TOL</title>
-    <div id="version">Version 0.4.1</div>
+    <div id="version">Version 0.4.2</div>
     <br>
     <div id="hint">Hints: </div>
     <style>
@@ -12,20 +12,27 @@
 
       /* Chrome, Safari, Opera */
       @-webkit-keyframes mymove {
-        50% {text-shadow: 10px 15px 20px powderblue;}
+        50% {text-shadow: 10px 15px 20px yellow;}
       }
 
   
       @keyframes mymove {
-        50% {text-shadow: 10px 15px 20px lime;}
+        50% {text-shadow: 10px 15px 20px red;}
       }
     </style>
     <script>
       var hint = 0;
-      diary1.style.display="block";
-      diary2.style.display="block";
+      hide('diary1');
+      hide('diary2');
       
-        
+      function hide(div) {
+        var x = document.getElementById(div);
+        x.style.display = 'block';
+      }
+      function show(div) {
+        var x = document.getElementById(div);
+        x.style.display = 'none';
+      }
       
       setInterval(function() {
         document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
@@ -47,7 +54,7 @@
           setTimeout(function(){document.getElementById('output').innerHTML = "CORRUPTION DETECTED IN \"TOL/history.txt\"...";}, 6000);
           
           document.getElementById('enter').value = ""; //RESET input
-          diary1.style.display="none";
+          show('diary1');
           
         }
         if (input=="/open TOL/history.txt") {
@@ -70,7 +77,7 @@
           setTimeout(function(){alert("ONE-WAY-WALL HOLDING... FIREWALL FAILING... LOGISTICS FAILING... COMMMMMMMMMMUNICATIONS FAILINGGGGG... OOnnnnE-Way-wAlL FFffFaAaaIiiILlllLIinNngGG...");}, 15000);
           document.getElementById('enter').value = ""; //RESET input
           
-          diary2.style.display = "none";
+          show('diary2');
           
         }
         //Add if input is /help hacking
