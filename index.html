@@ -1,7 +1,7 @@
 <html>
   <head style="background-color:green;">
     <title>TOL</title>
-    <div id="version">Version 0.4.4</div>
+    <div id="version">Version 0.4.5</div>
     <br>
     <div id="hint">Hints: 0</div><br>
     
@@ -23,6 +23,8 @@
     </style>
     <script>
       var hint = 0;
+      document.getElementById("diary1").style.visibility = "hidden";
+      document.getElementById("diary2").style.visibility = "hidden";
       
         
       setInterval(function() {
@@ -97,7 +99,7 @@
     <textarea rows=1 id="enter"></textarea><br>
     
     <div id="output"></div><br><hr><br>
-    <div>
+    
       <p id="diary1" style="font-family:courier;">
         <strong>1/1/2056</strong><br>
         Dear Diary, <br>I think the world is ending. I really should have told her how I really felt about her while I could.
@@ -106,11 +108,10 @@
         live life while we can. <del>There is no point in killing each other for information</del> Whether we are in a 
         layer or not, does it really matter? Either way we will still never know, even if you get out of a layer, what is saying
         you aren't still in one. Well I guess that is why they are called layers isn't it.<br><br>
-        <strong>7/1/2056</strong><br>
+        
       </p>
-    </div>
-    <div>
       <p id="diary2" style="font-family:courier;">
+        strong>7/1/2056</strong><br>
         Dear Diary, <br> It has been 6 days since I last wrote anything, and in those 5 days a lot happened. I realised that soon 
         I am going to die as well and the only way to save myself is by uploading my conscience to a computer network system.
         I have done that but there is still a major problem. I need security, I think what I am going to do is to add lots of 
@@ -120,11 +121,10 @@
         it could make things worse than they already are! So my plan is to wait until the world is nothing except maybe one lone
         self-conscious but not self-understanding string of code or even person somehow, finds me and decides to open me up.
       </p>
-    </div>
+    
     
     <script>
-      document.getElementById("diary1").style.visibility = "hidden";
-      document.getElementById("diary2").style.visibility = "hidden";
+      
     </script>
   </body>
 </html>
