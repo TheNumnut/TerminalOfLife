@@ -1,7 +1,7 @@
 <html>
   <head style="background-color:green;">
     <title>TOL</title>
-    <div id="version">Version 0.4.3</div>
+    <div id="version">Version 0.4.4</div>
     <br>
     <div id="hint">Hints: 0</div><br>
     
@@ -45,7 +45,7 @@
           setTimeout(function(){document.getElementById('output').innerHTML = "CORRUPTION DETECTED IN \"TOL/history.txt\"...";}, 6000);
           
           document.getElementById('enter').value = ""; //RESET input
-          document.getElementById("diary1").style.display = "visible";
+          document.getElementById("diary1").style.visibility = "visible";
           
           
           
@@ -71,7 +71,7 @@
           
           document.getElementById('enter').value = ""; //RESET input
           
-          document.getElementById("diary2").style.display = "visible";
+          document.getElementById("diary2").style.visibility = "visible";
           
           
           
@@ -123,8 +123,8 @@
     </div>
     
     <script>
-      document.getElementById("diary1").style.display = "none";
-      document.getElementById("diary2").style.display = "none";
+      document.getElementById("diary1").style.visibility = "hidden";
+      document.getElementById("diary2").style.visibility = "hidden";
     </script>
   </body>
 </html>
