@@ -29,7 +29,7 @@
       setInterval(function() {
         document.getElementById('hint').innerHTML = "Hints: " + hint.toString();
         var input = document.getElementById('enter').value
-        if (input == "/bootup") {
+        if (input == "bootup") {
           
           setTimeout(function(){document.getElementById('output').innerHTML = "TOL BOOTING UP.";}, 1000);
           
@@ -52,7 +52,7 @@
          
           
         }
-        if (input=="/open TOL/history.txt") {
+        if (input=="open TOL/history.txt") {
           setTimeout(function(){document.getElementById('output').innerHTML = "ATTEMPTING TO OPEN FILE...";}, 1000);
           
           setTimeout(function(){document.getElementById('output').innerHTML = "WARNING: CORRUPTION HAZARD";}, 3000);
@@ -78,7 +78,20 @@
           
           
         }
-        //Add if input is /help hacking
+        if (input=="hacking") {
+          setTimeout(function(){document.getElementById('output').innerHTML = "LOCATING PORTS...";}, 1000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "TRACING PORTS...";}, 2000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I FAILED TO TRACE PORTS!";}, 4000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I AM ATTEMPTING TO HACK PORTS' INFO...";}, 6000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I HAVE IDENTIFIED THE PORTS AS DOUBLE-EDGED";}, 7000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I AM ATTEMPTING TO SET UP KNIFE";}, 8000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I AM ATTEMPTING TO SET UP TECHNET";}, 11000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I AM PREPARING TO STAB PORT SOURCE";}, 13000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "I AM ATTEMPTING TO CATCH LEAK IN TECHNET...";}, 15000);
+          setTimeout(function(){document.getElementById('output').innerHTML = "LEAK PATH: TOL/powers.txt";}, 18000);
+          
+          document.getElementById('enter').value = ""; //RESET input
+        }
           
           
       },3000);
