@@ -1,7 +1,7 @@
 <html>
   <head style="background-color:green;">
     <title>TOL</title>
-    <div id="version">Version 0.4.4</div>
+    <div id="version">Version 0.4.5</div>
     <br>
     <div id="hint">Hints: 0</div><br>
     
@@ -23,8 +23,7 @@
     </style>
     <script>
       var hint = 0;
-      document.getElementById("diary1").style.visibility = "hidden";
-      document.getElementById("diary2").style.visibility = "hidden";
+      
       
         
       setInterval(function() {
@@ -47,6 +46,7 @@
           setTimeout(function(){document.getElementById('output').innerHTML = "CORRUPTION DETECTED IN \"TOL/history.txt\"...";}, 6000);
           
           document.getElementById('enter').value = ""; //RESET input
+          
           document.getElementById("diary1").style.visibility = "visible";
           
          
@@ -98,7 +98,7 @@
     
     <div id="output"></div><br><hr><br>
     
-      <p hidden='hidden' id="diary1" style="font-family:courier;">
+      <p id="diary1" style="font-family:courier;">
         <strong>1/1/2056</strong><br>
         Dear Diary, <br>I think the world is ending. I really should have told her how I really felt about her while I could.
         Now she is probably dead. Legit, everyone is killing each other and trying to get out of <em>layers</em>. I could be
@@ -122,7 +122,8 @@
     
     
     <script>
-      
+      document.getElementById("diary1").style.visibility = "hidden";
+      document.getElementById("diary2").style.visibility = "hidden";
     </script>
   </body>
 </html>
